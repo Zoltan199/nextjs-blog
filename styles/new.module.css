@@ -1,0 +1,232 @@
+.header1{
+    background: var(--secondary-green);
+    height: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    align-content: space-between;
+    
+  }
+  
+  #navbar{
+    position: fixed;
+    top: 0;
+    padding: 30px;
+  }
+  
+  #navbar a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 16px;
+    margin-right: 20px;
+    font-weight: 600;
+  }
+
+  #navbar i{
+    color: var(--main-white);
+  }
+
+  #navbar a:hover{
+    color: var(--main-white);
+    font-size: 17px;
+    background-color: var(--main-green);
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  #navbar i:hover{
+    color: var(--main-white);
+    font-size: 17px;
+    background-color: var(--main-green);
+    border-radius: 10px;
+    padding: 8px;
+  }
+
+  
+  #welcomesection{
+    height: 100vh;
+    border-bottom: 15px solid var(--main-green);
+  }
+
+  .personalcard{
+    border: 5px solid var(--main-green);
+    background-color: var(--secondary-white);
+    width: 50vw;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .personalcard h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--secondary-green);
+    font-family: 'Francois One', sans-serif;
+    margin: 35px 0 15px 0;
+  }
+
+  .personalcard p{
+    text-align: center;
+    margin-bottom: 55px;
+    color: var(--main-green);
+  }
+
+  .personalcard #cardimg{
+    border: 2px solid var(--secondary-green);
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: url('/public/images/profile.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+
+  }
+  
+  #projects{
+    padding-bottom: 100px;
+    background-color: var(--secondary-green);
+    border-bottom: 15px solid var(--main-green);
+  }
+  
+  #projectsgrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-content: center;
+    grid-auto-rows: 300px;
+    margin: 0 50px;
+  }
+  
+  #projects h2{
+    text-align: center;
+    color: var(--main-yellow);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 80px 0 50px 0;
+  }
+  
+  .projecttile{
+    box-shadow: -1px 0px 10px -3px rgba(0,0,0,0.44);
+    -webkit-box-shadow: -1px 0px 10px -3px rgba(0,0,0,0.44);
+    -moz-box-shadow: -1px 0px 10px -3px rgba(0,0,0,0.44);
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .projecttile a{
+    text-decoration: none;
+    color: var(--secondary-green);
+    font-weight: 600;
+  }
+
+  .projecttile p{
+    background-color: var(--secondary-white);
+    height: 35px;
+    padding-top: 10px;
+  }
+  
+  .projecttile:nth-child(1){
+    background-image: url('https://www.cimmyt.org/content/uploads/2020/12/Borlaug-Sonora.jpg');
+  }
+  
+  .projecttile:nth-child(2){
+    background-image: url('https://i.postimg.cc/Kz5fttpN/1.png');
+  }
+  
+  .projecttile:nth-child(3){
+    background-image: url('https://i.postimg.cc/jjxLLNNK/2.png');
+  }
+
+  .projecttile:nth-child(4){
+    background-image: url('https://i.postimg.cc/Z5zJm5pG/1.png');
+  }
+
+  .projecttile:nth-child(5){
+    background-image: url('https://i.postimg.cc/B69tSnjw/2.png');
+  }
+
+  .projecttile:nth-child(6){
+    background-image: url('https://i.postimg.cc/sxxkbpVF/3.png');
+  }
+  
+  .projecttile:nth-child(7){
+    background-image: url('https://i.postimg.cc/s2zt3FV4/1.png');
+  }
+  
+  .projecttile:nth-child(8){
+    background-image: url('https://i.postimg.cc/PqM0x6Js/4.png');
+  }
+
+  .projecttile:nth-child(9){
+    background-image: url('https://i.postimg.cc/1XbjT2C6/5.png');
+  }
+  
+  
+  
+  #contact{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #contact a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0 20px;
+  }
+  
+  
+  @media (max-width: 942px){
+    #projects-grid{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: center;
+    grid-auto-rows: 300px;
+      }
+    #welcome-section{
+      height: 65vh;
+    }
+  }
+  
+  
+  @media (max-width: 500px){
+    #projects-grid{
+     display: grid;
+    grid-template-columns: minmax(320px, 300px);
+    gap: 25px;
+    justify-content: center;
+    grid-auto-rows: 300px;
+      }
+    #welcome-section{
+      height: 65vh;
+    }
+    #navbar a{
+      display: none;
+    }
+    #navbar i{
+      color: var(--main-white);
+      margin-right: 25px;
+      font-size: 20px;
+    }
+  }
